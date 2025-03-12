@@ -8,6 +8,12 @@
     <!--  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <style>
+     .active{
+        background: #FF1F3D; 
+        color: white; 
+    }
+   </style>
 </head>
 
 <body class="container mx-auto py-6">
@@ -22,14 +28,17 @@
     </header>
     <nav id="category-container" class="flex py-5 justify-center gap-6">
         <div>
-            <button onclick="loadVideos()" class="btn btn-sm bg-[red] text-white">All</button>
+            <button id="btn-all" onclick="loadVideos()" class="btn btn-sm ">All</button>
         </div>
 
     </nav>
 
     <section class="grid grid-cols-1 md:grid-cols-4 gap-6" id="video-container">
       
-
+        <div class="col-span-full flex flex-col text-center justify-center items-center py-20 gap-4" >
+            <img class="w-[120px]" src="img/Icon.png" alt="">
+            <h2 class="text-2xl font-bold"> Oops!! Sorry, There is no content here </h2>
+        </div>
     </section>
 
 
